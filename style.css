@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: aquamarine;  
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  background-color: #212121;
+ 
+}
+.container{
+  position: relative;
+}
+
+.clock{
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.1);
+  border: 2px solid rgba(255,255,255,0.5);
+  box-shadow: 0 0px 30px rgb(0,0,0,0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+  background: url(https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/03/Naruto-happy-in-Shippuden.jpg)no-repeat center center/cover;
+}
+
+
+
+.clock span{
+  position:absolute;
+  transform: rotate(calc(30deg * var(--i)));
+  inset: 12px;
+  text-align: center;
+   
+}
+
+.clock span b{
+  transform: rotate(calc(-30deg * var(--i)));
+  display:inline-block;
+  font-size: 25px;
+  font-weight:bold ;
+  color: white;
+}
+
+.clock::before{
+content: '';
+ position: absolute;
+ width: 8px;
+ height: 8px;
+ border-radius: 50%;
+background-color: aliceblue;
+bac
+}
+
+.hand{
+ position: absolute ;
+ display: flex;
+ justify-content: center;
+ align-items: flex-end;
+ border-radius: 5px;
+} 
+.hand i{
+  position: absolute;
+  height: var(--h); 
+  width: 4px;
+  background-color: antiquewhite;
+}
